@@ -7,11 +7,6 @@
 
 /*#endregion generals*/
 
-/*  
-date: ‘Sometype Mono’, ‘monospace’;
-*/
-
-
 /*#region utily*/
 .font_Edu_Tas_Beginner {
     font-family: 'Edu Tas Beginner', sans-serif;
@@ -51,6 +46,17 @@ main {
     left: 50%;
     z-index: 3;
     translate: -50% -50%;
+}
+
+.card_date {
+    font-family: 'Sometype Mono', monospace;
+    margin: 0;
+}
+
+.card-title {
+    font-weight: 700;
+    margin: 0;
+
 }
 
 /*#endregion main*/
