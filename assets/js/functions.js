@@ -54,7 +54,7 @@ function createPostMarkup(post) {
                             ${date}
                         </p>
                         <h2 class="card-title font_Edu_Tas_Beginner">
-                            ${title}
+                            ${title.toUpperCase()}
                         </h2>
                     </div>
                 </div>
