@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+titoli: 
+date: ‘Sometype Mono’, ‘monospace’;
+ */
+
+/* title font family*/
+h1 {
+    font-family: 'Edu Tas Beginner', sans-serif;
+    font-weight: 1000;
+}
+
+
+
+
+header {
+
+    background-image: url(../img/wall.png);
+
+    h1 {
+        font-size: 80px;
+    }
+}
