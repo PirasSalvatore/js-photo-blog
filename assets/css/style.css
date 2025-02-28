@@ -1,28 +1,48 @@
+/*#region generals*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 
-titoli: 
-date: ‘Sometype Mono’, ‘monospace’;
- */
+/*#endregion generals*/
 
-/* title font family*/
-h1 {
+/*  
+date: ‘Sometype Mono’, ‘monospace’;
+*/
+
+
+/*#region utily*/
+.title_family {
     font-family: 'Edu Tas Beginner', sans-serif;
-    font-weight: 1000;
 }
 
+/*#endregion utily*/
 
-
-
+/*#region header*/
 header {
 
     background-image: url(../img/wall.png);
 
     h1 {
         font-size: 80px;
+        font-weight: 1000;
     }
 }
+
+/*#endregion header*/
+
+
+/*#region main*/
+
+main {
+    background-image: url(../img/cork.png);
+}
+
+/*image size to card*/
+.card img {
+    width: 100%;
+    max-width: 265px;
+}
+
+/*#endregion main*/
