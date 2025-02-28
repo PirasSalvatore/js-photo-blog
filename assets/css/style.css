@@ -13,7 +13,7 @@ date: ‘Sometype Mono’, ‘monospace’;
 
 
 /*#region utily*/
-.title_family {
+.font_Edu_Tas_Beginner {
     font-family: 'Edu Tas Beginner', sans-serif;
 }
 
@@ -40,9 +40,17 @@ main {
 }
 
 /*image size to card*/
-.card img {
+.card-img-top {
     width: 100%;
-    max-width: 265px;
+    max-height: 265px;
+}
+
+/*pin on top card*/
+.pin {
+    top: 0;
+    left: 50%;
+    z-index: 3;
+    translate: -50% -50%;
 }
 
 /*#endregion main*/
