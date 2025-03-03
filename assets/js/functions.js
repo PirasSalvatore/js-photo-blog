@@ -18,7 +18,6 @@ function popularAlbum(albumEl, overlayEL, imgOverlayEl, postUrl) {
 
                 elementEL.addEventListener('click', () => {
                     overlayEL.classList.remove('d-none')
-
                     imgOverlayEl.src = element.url
                 })
 
@@ -33,9 +32,9 @@ function popularAlbum(albumEl, overlayEL, imgOverlayEl, postUrl) {
 }
 
 /**
- * generate markup for single post
+ * generate DOM Elemnt for single post
  * @param {Object} post 
- * @returns {Node DOM} colum Markup
+ * @returns {Node DOM} post dom element 
  */
 function createPostMarkup(post) {
     const { id, title, date, url } = post
@@ -52,9 +51,17 @@ function createPostMarkup(post) {
     //insert pin image in col
     colEl.appendChild(imgEL)
 
-    //create car
+    //create card
     const cardEL = document.createElement("div")
     cardEL.classList.add("card", "p-3")
+
+    cardEL.addEventListener('mouseover', () => {
+        cardEL.classList.toggle('effect')
+    })
+
+    cardEL.addEventListener('mouseout', () => {
+        cardEL.classList.toggle('effect')
+    })
 
     //create card img
     const cradImageEl = document.createElement("img")
