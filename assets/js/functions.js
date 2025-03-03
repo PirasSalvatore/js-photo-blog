@@ -5,19 +5,26 @@
  * @param {String} pastUrl 
  * @return {void}
  */
-function popularAlbum(albumEl, postUrl) {
+function popularAlbum(albumEl, overlayEL, imgOverlayEl, postUrl) {
 
     axios.get(postUrl)
         .then((data) => {
 
             console.log(data);
 
-            data.data.forEach((elemnt) => {
+            data.data.forEach((element) => {
 
-                albumEl.appendChild(createPostMarkup(elemnt))
+                const elementEL = createPostMarkup(element)
+
+                elementEL.addEventListener('click', () => {
+                    overlayEL.classList.remove('d-none')
+
+                    imgOverlayEl.src = element.url
+                })
+
+                albumEl.appendChild(elementEL)
 
             })
-
 
         })
         .catch((error) => {
@@ -84,9 +91,7 @@ function createPostMarkup(post) {
     //insert card in col
     colEl.appendChild(cardEL)
 
-    console.log(colEl);
-
-
+    //console.log(colEl);
 
     return colEl
 }
