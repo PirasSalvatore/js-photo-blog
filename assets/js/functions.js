@@ -90,7 +90,7 @@ function createPostMarkup(post) {
     titleCardBody.innerText = title.toUpperCase()
 
     //insert title card in card body
-    cardBodyEl.appendChild(pCardBodyEl)
+    cardBodyEl.appendChild(titleCardBody)
 
     //insert card body in card
     cardEL.appendChild(cardBodyEl)

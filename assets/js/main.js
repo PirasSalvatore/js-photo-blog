@@ -4,6 +4,7 @@ const albumEl = document.querySelector('#album')
 const overlayEL = document.querySelector('#overlay')
 const imgOverlayEl = document.querySelector('.overlay_container>img')
 const btnOverlayEl = document.querySelector('.close')
+//const esEL = document.getElementsByClassName(".myclass")
 
 //console.log(overlayEL, imgOverlayEl.src);
 
